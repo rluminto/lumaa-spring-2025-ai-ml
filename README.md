@@ -9,13 +9,60 @@ This project implements a content-based recommendation system for movies. It use
 - **Description:** It contains movie details such as Title, Description, Review, Genre, and Rating.
 
 ## Setup
-- **Python Version:** Python 3.x
-- **Dependencies:** Install required libraries using:
-    python -m venv venv
-    source venv/bin/activate  # On macOS/Linux
-    venv\Scripts\activate  # On Windows
-    pip install -r requirements.txt
+
+### 1. Clone the Repository
+
+```sh
+git clone https://github.com/rluminto/lumaa-spring-2025-ai-ml.git
+```
+
+### 2. Set Up a Virtual Environment
+
+#### On macOS/Linux:
+
+```sh
+python -m venv venv
+source venv/bin/activate
+```
+
+#### On Windows:
+
+```sh
+python -m venv venv
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+venv\Scripts\activate
+```
+
+### 3. Install Dependencies
+
+Once the virtual environment is activated, install the required dependencies:
+
+```sh
+pip install -r requirements.txt
+```
+
+## Running the Recommendation System
+
+To run the script with a query, use:
+
+```sh
+python recommend.py "your-query"
+```
+Example query: "I love action movies with great speacial effects"
+
+This will output the **top 5 recommended movies** based on text similarity.
+
 
 ## Salary Expectation
-**Expected Monthly Salary:** $3000-4000
+
+**Expected Monthly Salary:** **\$3000 - \$4000**
+
+## Future Improvements
+
+- Enhance recommendation accuracy by incorporating **word embeddings** (e.g., Word2Vec, BERT).
+- Add a **user interface** (web or CLI) for interactive queries.
+- Expand dataset to include more movies for better generalization.
+- Integrate **collaborative filtering** for a hybrid recommendation approach.
+
+
 
